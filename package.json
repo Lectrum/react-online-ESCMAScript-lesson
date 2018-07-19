@@ -1,0 +1,13 @@
+{
+    "name": "ECMAScript",
+    "version": "0.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "start": "nodemon"
+    },
+    "dependencies": {
+        "nodemon": "~1.18.3"
+    }
+}
