@@ -1,6 +1,7 @@
 'use strict';
+
 const sum = (a, b, c) => {
-    console.log(a + b + c); // 15
+    console.log(a + b + c);
 };
 const data = [2, "3", 4];
 
