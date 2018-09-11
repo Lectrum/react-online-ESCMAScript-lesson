@@ -1,13 +1,17 @@
 {
     "name": "ECMAScript",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "main": "index.js",
     "license": "MIT",
     "private": true,
     "scripts": {
         "start": "nodemon"
     },
-    "dependencies": {
-        "nodemon": "~1.18.3"
+    "devDependencies": {
+        "@babel/core": "7.0.0",
+        "@babel/plugin-proposal-class-properties": "7.0.0",
+        "@babel/preset-env": "7.0.0",
+        "@babel/register": "7.0.0",
+        "nodemon": "1.18.3"
     }
 }

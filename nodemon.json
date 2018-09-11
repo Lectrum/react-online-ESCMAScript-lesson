@@ -1,6 +1,6 @@
 {
     "verbose": false,
     "watch": ["./source/**/**"],
-    "exec": "node --experimental-modules --no-warnings ./source",
-    "ext": "mjs"
+    "exec": "node --require @babel/register ./source",
+    "ext": "js"
 }
