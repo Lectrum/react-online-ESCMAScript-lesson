@@ -12,13 +12,13 @@
 6. Склонируй этот проект:
 
 ```bash
-git clone https://github.com/Lectrum/react-online-ES.git
+git clone https://github.com/Lectrum/react-online-es.git
 ```
 
 7. Перейди в проект, выполнив команду:
 
 ```bash
-cd react-online-ES
+cd react-online-es
 ```
 
 8. Теперь выполни команду:
