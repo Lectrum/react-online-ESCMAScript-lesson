@@ -1,5 +1,5 @@
-const a = 1;
-const b = 2;
+const abcd = 'react';
+const Component = 'component';
 
-export default a;
-export { b };
+export default abcd;
+export { Component };

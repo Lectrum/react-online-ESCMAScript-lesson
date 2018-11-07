@@ -1,6 +1,6 @@
-const f = (title) => {
+const Func = (title) => {
     this.title = title;
     console.log(this.title);
 };
 
-new f('Entity');
+new Func('Entity');

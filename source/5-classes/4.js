@@ -9,8 +9,6 @@ class Human {
 }
 
 class Programmer extends Human {
-    MY_STATUS = 'I learn stuff.';
-
     constructor(name, skills) {
         super(name);
 
@@ -18,13 +16,7 @@ class Programmer extends Human {
     }
 
     saySkills() {
-        for (const skill of this.skills) {
-            console.log(skill);
-        }
-    }
-
-    sayStatus() {
-        console.log(this.MY_STATUS);
+        console.log(this.skills);
     }
 }
 
@@ -32,4 +24,3 @@ const jack = new Programmer('Jack', [ 'JavaScript', 'HTML', 'CSS', 'React' ]);
 
 jack.sayName();
 jack.saySkills();
-jack.sayStatus();

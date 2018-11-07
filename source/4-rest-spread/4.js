@@ -1,5 +1,8 @@
-const numbers = (num1, ...params) => {
-    console.log(params);
+const sum = (a, b, c) => {
+    console.log(a + b + c);
 };
 
-numbers(1, 2, 3, 4, Infinity);
+const data = [ 2, '3', 4 ];
+
+sum(10, 2, '3', 4);
+sum(10, ...data);

@@ -1,6 +1,8 @@
-const user1 = { name: 'Jon', car: 'Ford' };
-const user2 = { name: 'Joe', car: 'Audi' };
+const profile = { firstName: 'Walter', lastName: 'White' };
+const items = { car: 'audi', phone: 'nokia' };
 
-const user = { ...user1, ...user2 };
+const user1 = Object.assign({}, profile, items);
+const user2 = { ...profile, ...items };
 
-console.log(user);
+console.log(user1);
+console.log(user2);

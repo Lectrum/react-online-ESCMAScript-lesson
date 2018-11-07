@@ -1,1 +1,3 @@
-export default const a = 'hello';
+const a = 'hello';
+
+export default a;

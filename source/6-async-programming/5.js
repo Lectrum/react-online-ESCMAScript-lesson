@@ -21,7 +21,7 @@ const f1 = async () => {
 };
 
 (async () => {
-    await await await f1();
+    await /* f3() */ await /* f2() */ await f1();
 
     console.log('🏁');
 })();

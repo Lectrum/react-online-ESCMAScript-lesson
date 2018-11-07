@@ -9,12 +9,10 @@ class Human {
 }
 
 const jack = new Human('Jack');
+const bob = new Human('Bob');
 
 jack.sayName();
+bob.sayName();
 
 console.log('→ jack', jack);
-
-console.log(
-    '→ sayName in jack prototype:',
-    Object.getPrototypeOf(jack).sayName,
-);
+console.log('→ bob', bob);

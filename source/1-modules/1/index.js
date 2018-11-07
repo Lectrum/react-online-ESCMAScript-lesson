@@ -1,3 +1,3 @@
-import a from './source';
+import abc from './source';
 
-console.log(a);
+console.log(abc);

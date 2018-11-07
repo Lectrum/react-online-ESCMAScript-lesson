@@ -1,7 +1,13 @@
-const sum = (a, b, c) => {
-    console.log(a + b + c);
+const user = {
+    firstName: 'Walter',
+    lastName:  'White',
+    car:       'audi',
+    phone:     'nokia',
 };
+const food = [ 'apple', 'orange', 'banana', 'onion', 'cabbage', 'carrot' ];
 
-const data = [ 2, '3', 4 ];
+const { firstName, lastName, ...restUser } = user;
+const [ firstFood, secondFood, ...restFood ] = food;
 
-sum(10, ...data);
+console.log(firstName, lastName, restUser);
+console.log(firstFood, secondFood, restFood);

@@ -1,1 +1,1 @@
-console.log(1);
+console.log('→ source.js', 1);
