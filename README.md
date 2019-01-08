@@ -42,5 +42,5 @@ npm run start
 10. Если всё сделано правильно, то в терминале выведется строка:
 
 ```bash
-hello
+React component
 ```
