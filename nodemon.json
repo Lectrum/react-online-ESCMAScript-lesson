@@ -1,6 +1,0 @@
-{
-    "verbose": false,
-    "watch": ["./source/**/**"],
-    "exec": "node --require @babel/register ./source",
-    "ext": "js"
-}

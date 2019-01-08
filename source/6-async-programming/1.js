@@ -1,6 +1,8 @@
-const delay = (duration = 1000) => new Promise((resolve) => {
-    setTimeout(() => resolve(), duration);
-});
+const delay = (duration = 1000) => {
+    return new Promise((resolve) => {
+        setTimeout(() => resolve(), duration);
+    });
+};
 
 console.log('→ start');
 

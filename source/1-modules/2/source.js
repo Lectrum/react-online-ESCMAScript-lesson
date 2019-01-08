@@ -1,3 +1,3 @@
-const a = 'hello';
+const a = 'React component';
 
 export default a;
