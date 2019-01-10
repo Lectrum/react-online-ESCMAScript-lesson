@@ -1,3 +1,1 @@
-const a = 'React component';
-
-export default a;
+export default 'Vova';

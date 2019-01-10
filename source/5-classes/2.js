@@ -13,6 +13,3 @@ const bob = new Human('Bob');
 
 jack.sayName();
 bob.sayName();
-
-console.log('→ jack', jack);
-console.log('→ bob', bob);

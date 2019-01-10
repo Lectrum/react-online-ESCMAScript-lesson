@@ -1,20 +1,24 @@
-const delay = (duration = 1000) => new Promise((resolve) => {
-    setTimeout(resolve, duration);
-});
+const delay = (ms = 1000) => new Promise((resolve) => setTimeout(resolve, ms));
 
-console.log('→ start');
+// Лучше, чем на коллбеках, однако....
+const init = () => {
+    console.log('→ first');
 
-delay()
-    .then(() => {
-        console.log('→ first pass');
+    delay().then(() => {
+        console.log('→ second');
 
-        return delay(2000);
-    })
-    .then(() => {
-        console.log('→ second pass');
+        return delay().then(() => {
+            console.log('→ third');
 
-        return delay(3000);
-    })
-    .then(() => {
-        console.log('→ third pass');
+            return delay().then(() => {
+                console.log('→ fourth');
+
+                return delay().then(() => {
+                    console.log('→ fifth');
+                });
+            });
+        });
     });
+};
+
+init();

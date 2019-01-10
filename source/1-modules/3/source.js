@@ -1,3 +1,6 @@
-const a = 'Welcome ✓';
+const user = 'Vova';
 
-export { a };
+/**
+ * В одном файле может быть сколько угодно named export'ов.
+ */
+export { user }; // named export

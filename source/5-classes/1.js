@@ -1,9 +1,10 @@
 class Human {
-    sayName(name) {
-        console.log(name);
+    // инициализация объекта
+    constructor(name) {
+        this.name = name;
     }
 }
 
-const jack = new Human();
+const vova = new Human('Vova');
 
-jack.sayName('Jack');
+console.log('→ vova', vova);

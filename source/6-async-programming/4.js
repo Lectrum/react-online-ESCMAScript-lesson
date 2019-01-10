@@ -1,6 +1,9 @@
-const delay = (duration = 1000) => new Promise((resolve) => {
-    setTimeout(resolve, duration);
-});
+/**
+ * ES2017
+ * Async functions — https://github.com/tc39/ecmascript-asyncawait
+ **/
+
+const delay = (ms = 1000) => new Promise((resolve) => setTimeout(resolve, ms));
 
 (async () => {
     console.log('→ start');
@@ -9,11 +12,11 @@ const delay = (duration = 1000) => new Promise((resolve) => {
 
     console.log('→ first pass');
 
-    await delay(2000);
+    await delay();
 
     console.log('→ second pass');
 
-    await delay(3000);
+    await delay();
 
     console.log('→ third pass');
 })();

@@ -1,3 +1,3 @@
-import React, { Component } from './source';
+import React, { Component, ref } from './source';
 
-console.log(React, Component);
+console.log(React, Component, ref);

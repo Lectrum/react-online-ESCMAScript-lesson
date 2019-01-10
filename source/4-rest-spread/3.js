@@ -6,6 +6,7 @@ const user = {
 };
 const food = [ 'apple', 'orange', 'banana', 'onion', 'cabbage', 'carrot' ];
 
+// rest → остаток, остаточные
 const { firstName, lastName, ...restUser } = user;
 const [ firstFood, secondFood, ...restFood ] = food;
 

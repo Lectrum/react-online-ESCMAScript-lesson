@@ -1,22 +1,12 @@
 const user = {
-    name: {
-        en: {
-            first:  'Jon',
-            skills: [ 'JavaScript', 'HTML', 'CSS', 'React', 'Webpack' ],
-        },
-    },
-    city:   'Berlin',
-    planet: 'Earth',
+    name:   'Vova',
+    skills: [ 'JavaScript', 'HTML', 'CSS', 'React', 'Webpack' ],
 };
 
-const {
-    name: {
-        en: {
-            first,
-            skills: [ , , , firstSkill, secondSkill ],
-        },
-    },
-} = user;
+const { name, skills } = user;
+const [ firstSkill, secondSkill ] = skills;
 
-console.log('→ first ', first);
-console.log('→ skills', firstSkill, secondSkill);
+console.log('→ name:       ', name);
+console.log('→ skills:     ', skills);
+console.log('→ firstSkill: ', firstSkill);
+console.log('→ secondSkill:', secondSkill);

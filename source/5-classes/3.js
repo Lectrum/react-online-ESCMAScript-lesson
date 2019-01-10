@@ -1,24 +1,23 @@
 class Human {
-    constructor(name, job) {
+    constructor(name) {
         this.name = name;
-        this.job = job;
     }
 
-    sayName = () => {
-        console.log(this.name);
-    };
-
-    sayJob() {
-        console.log(this.job);
+    sayName() {
+        return this.name;
     }
 }
 
-const jack = new Human('Jack', 'programmer');
+class Programmer extends Human {
+    constructor(name) {
+        super(name);
+    }
 
-jack.sayName();
-jack.sayJob();
+    sayName() {
+        console.log(`I am ${super.sayName()} and I am programmer.`);
+    }
+}
 
-console.log('→ jack', jack);
+const vova = new Programmer('Vova');
 
-console.log(Object.getPrototypeOf(jack).sayName);
-console.log(Object.getPrototypeOf(jack).sayJob);
+vova.sayName();

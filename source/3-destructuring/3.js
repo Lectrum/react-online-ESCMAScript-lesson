@@ -1,15 +1,17 @@
 const user = {
-    name: 'Jon',
-    age:  21,
+    name: {
+        first: 'Vova',
+        last:  'Petrenko',
+    },
+    skills: [ 'JavaScript', 'HTML', 'CSS', 'React', 'Webpack', 'Node' ],
+    city:   'Berlin',
+    planet: 'Earth',
 };
 
-let name = null;
-let age = null;
+const {
+    name: { first, last },
+    skills: [ , , , firstSkill, secondSkill ],
+} = user;
 
-console.log('→ name:', name);
-console.log('→ age: ', age);
-
-({ name, age } = user);
-
-console.log('→ name:', name);
-console.log('→ age: ', age);
+console.log('→ first, last', first, last);
+console.log('→ skills', firstSkill, secondSkill);
