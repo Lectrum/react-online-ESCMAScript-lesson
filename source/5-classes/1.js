@@ -1,5 +1,4 @@
 class Human {
-    // инициализация объекта
     constructor(name) {
         this.name = name;
     }

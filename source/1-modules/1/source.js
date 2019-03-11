@@ -1,6 +1,9 @@
-const user = 'Vova';
+const greeting = 'Добро пожаловать!';
 
 /**
+ * Это — экспорт по-умолчанию (default export).
+ * Инструкция export default открывает доступ к greeting из внешних модулей.
+ * Чтобы получить доступ к экспортированной сущности нужно использовать инструкцию import.
  * В одном файле может быть только один export default.
  */
-export default user; // default export
+export default greeting;

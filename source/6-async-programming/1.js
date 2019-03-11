@@ -7,5 +7,5 @@ const delay = (ms = 1000) => {
 };
 
 delay(2000).then(() => {
-    console.log('→ success');
+    console.log('→ done');
 });

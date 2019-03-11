@@ -6,17 +6,17 @@
 const delay = (ms = 1000) => new Promise((resolve) => setTimeout(resolve, ms));
 
 (async () => {
-    console.log('→ start');
+    console.log('→ 1');
 
     await delay();
 
-    console.log('→ first pass');
+    console.log('→ 2');
 
     await delay();
 
-    console.log('→ second pass');
+    console.log('→ 3');
 
     await delay();
 
-    console.log('→ third pass');
+    console.log('→ 4');
 })();

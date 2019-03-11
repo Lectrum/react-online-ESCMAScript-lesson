@@ -3,6 +3,10 @@ const user = {
     skills: [ 'JavaScript', 'HTML', 'CSS', 'React', 'Webpack' ],
 };
 
+/**
+ * Приём деструктурирующего присваивания придумали,
+ * чтобы упростить доступ к вложенным свойствам структур данных.
+ */
 const { name, skills } = user;
 const [ firstSkill, secondSkill ] = skills;
 

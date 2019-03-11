@@ -1,12 +1,12 @@
-const abcd = 'react';
-const Component = 'component';
-const ref = 'ref';
+const react = 'react';
+const Component = 'Component-code';
+const createRef = 'createRef-code';
 
 /**
  * В одном файле может быть сколько угодно named export'ов.
  */
-export { Component, ref };
+export { Component, createRef };
 /**
  * В одном файле может быть только один export default.
  */
-export default abcd;
+export default react;

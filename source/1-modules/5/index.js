@@ -1,8 +1,10 @@
-import { a as b, b as a, c as d } from './source';
+/**
+ * Это — альтернативный способ импорта всех экспортов из модуля в один шаг.
+ * Все именованные экспорты попадают в объект namespace под ключом
+ * с соответствующим именем.
+ * А значение экспорта по-умолчанию будет
+ * находиться под ключом с именем default.
+ */
+import * as namespace from './source';
 
-const c = 4;
-
-console.log('a', a);
-console.log('b', b);
-console.log('c', c);
-console.log('d', d);
+console.log('→ namespace', namespace);

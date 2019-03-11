@@ -1,4 +1,4 @@
-module.exports = function(api) {
+module.exports = api => {
     api.cache.forever();
 
     return {
@@ -16,6 +16,6 @@ module.exports = function(api) {
                 },
             ],
         ],
-        plugins: ['@babel/plugin-proposal-class-properties'],
+        plugins: ['@babel/proposal-class-properties'],
     };
 };

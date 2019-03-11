@@ -7,24 +7,22 @@ const delay = (ms = 1000) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const f3 = async () => {
     await delay();
-    console.log('→ third');
+    console.log('→ 4');
 };
 const f2 = async () => {
     await delay();
-    console.log('→ second');
+    console.log('→ 3');
 
-    return f3();
+    return f3;
 };
 const f1 = async () => {
-    console.log('→ start');
+    console.log('→ 1');
     await delay();
-    console.log('→ first');
+    console.log('→ 2');
 
-    return f2();
+    return f2;
 };
 
 (async () => {
-    await /* f3() */ await /* f2() */ await f1();
-
-    console.log('🏁');
+    (await /* f3 */ (await /* f2 */ await f1())())();
 })();

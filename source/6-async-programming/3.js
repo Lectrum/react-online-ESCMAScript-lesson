@@ -6,19 +6,24 @@
 const delay = (ms = 1000) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const start = async () => {
-    console.log('→ start');
+    /**
+     * Поэтому придумали лаконичный синтаксис async/await.
+     * Инструкции всегда идут вертикально, что упрощает чтение кода и его отладку.
+     * «Под капотом» у async/await — промисы.
+     */
+    console.log('→ 1');
 
     await delay();
 
-    console.log('→ first pass');
+    console.log('→ 2');
 
     await delay();
 
-    console.log('→ second pass');
+    console.log('→ 3');
 
     await delay();
 
-    console.log('→ third pass');
+    console.log('→ 4');
 };
 
 start();

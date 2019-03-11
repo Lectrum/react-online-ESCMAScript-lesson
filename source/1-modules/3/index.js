@@ -1,3 +1,8 @@
-import { a } from './source';
+/**
+ * В отличии от импорта по-умолчанию, именованные экспорты нужно
+ * заключить в фигурные скобки.
+ * Именованных импортов может быть сколько угодно.
+ */
+import { greeting, user } from './source';
 
-console.log(a);
+console.log(greeting, user);
