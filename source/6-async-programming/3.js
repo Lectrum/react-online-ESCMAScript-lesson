@@ -12,17 +12,11 @@ const start = async () => {
      * «Под капотом» у async/await — промисы.
      */
     console.log('→ 1');
-
     await delay();
-
     console.log('→ 2');
-
     await delay();
-
     console.log('→ 3');
-
     await delay();
-
     console.log('→ 4');
 };
 
