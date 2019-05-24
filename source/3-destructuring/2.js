@@ -8,7 +8,7 @@ const user = {
  * чтобы упростить доступ к вложенным свойствам структур данных.
  */
 const { name, skills } = user;
-const [ firstSkill, secondSkill ] = skills;
+const [ , , firstSkill, secondSkill ] = skills;
 
 console.log('→ name:       ', name);
 console.log('→ skills:     ', skills);

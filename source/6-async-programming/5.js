@@ -24,5 +24,8 @@ const f1 = async () => {
 };
 
 (async () => {
-    (await /* f3 */ (await /* f2 */ await f1())())();
+    const f2 = await f1();
+    await f2();
+
+    // (await /* f3() */ (await /* f2() */ await f1())())();
 })();
